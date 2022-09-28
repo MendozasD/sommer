@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Piece:</strong>
+  <%= @texter.piece %>
+</p>
+
+<p>
+  <strong>Genre:</strong>
+  <%= @texter.genre %>
+</p>
+
+<p>
+  <strong>Year:</strong>
+  <%= @texter.year %>
+</p>
+
+<p>
+  <strong>Responsible:</strong>
+  <%= @texter.responsible %>
+</p>
+
+<p>
+  <strong>Comment:</strong>
+  <%= @texter.comment %>
+</p>
+
+<p>
+  <strong>Premiere:</strong>
+  <%= @texter.premiere %>
+</p>
+
+<%= link_to 'Edit', edit_texter_path(@texter) %> |
+<%= link_to 'Back', texters_path %>
