@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   get 'steckbrief', to: 'pages#steckbrief'
   get 'kontakt', to: 'pages#kontakt'
 
-  resources :texters
   resources :directors
   resources :actors
+  resources :writers
 end

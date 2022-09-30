@@ -1,10 +1,10 @@
-<%= form_with(model: texter) do |form| %>
-  <% if texter.errors.any? %>
+<%= form_with(model: writer) do |form| %>
+  <% if writer.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(texter.errors.count, "error") %> prohibited this texter from being saved:</h2>
+      <h2><%= pluralize(writer.errors.count, "error") %> prohibited this writer from being saved:</h2>
 
       <ul>
-        <% texter.errors.each do |error| %>
+        <% writer.errors.each do |error| %>
           <li><%= error.full_message %></li>
         <% end %>
       </ul>

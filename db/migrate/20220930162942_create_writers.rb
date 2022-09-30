@@ -1,6 +1,6 @@
-class CreateTexters < ActiveRecord::Migration[6.1]
+class CreateWriters < ActiveRecord::Migration[6.1]
   def change
-    create_table :texters do |t|
+    create_table :writers do |t|
       t.string :piece
       t.string :genre
       t.integer :year

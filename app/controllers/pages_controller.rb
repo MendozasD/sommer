@@ -12,7 +12,7 @@ class PagesController < ApplicationController
   end
 
   def texter
-    @texter = Texter.all
+    @writer = Writer.all
   end
 
   def steckbrief
