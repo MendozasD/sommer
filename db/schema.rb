@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_09_30_162942) do
+ActiveRecord::Schema.define(version: 2022_09_28_151049) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -25,30 +25,6 @@ ActiveRecord::Schema.define(version: 2022_09_30_162942) do
     t.string "musiker"
     t.string "choreo"
     t.string "url"
-    t.boolean "premiere"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
-  create_table "directors", force: :cascade do |t|
-    t.string "piece"
-    t.string "location"
-    t.date "start_date"
-    t.date "end_date"
-    t.string "url"
-    t.string "musiker"
-    t.string "choreo"
-    t.boolean "premiere"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
-  create_table "writers", force: :cascade do |t|
-    t.string "piece"
-    t.string "genre"
-    t.integer "year"
-    t.string "responsible"
-    t.text "comment"
     t.boolean "premiere"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

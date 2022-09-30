@@ -1,13 +1,5 @@
 Rails.application.routes.draw do
-  root to: 'pages#home'
-
-  get 'schauspieler', to: 'pages#schauspieler'
-  get 'regisseur', to: 'pages#regisseur'
-  get 'texter', to: 'pages#texter'
-  get 'steckbrief', to: 'pages#steckbrief'
-  get 'kontakt', to: 'pages#kontakt'
-
-  resources :directors
   resources :actors
-  resources :writers
+  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  root to: 'pages#home'
 end
